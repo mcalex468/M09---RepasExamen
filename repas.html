@@ -1,65 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="repas.css">
-    <title>Practicando Propiedades</title>
+    <title>Plataforma de Películas</title>
 </head>
 
 <body>
-    <div class="titulo">
-        <h1>Audi RS3</h1>
-    </div>
-
+    <!-- Encabezado -->
     <header>
+        <div class="logo">
+            <h1>AUDI</h1>
+        </div>
         <nav>
             <ul class="menu">
+                <li class="navs">Audi RS3</li>
                 <li class="navs">Audi RSQ 3</li>
-                <li class="navs">Audi RS 5</li>
-                <li class="navs">Audi RS 6</li>
-                <li class="navs">Audi RS 7</li>
+                <li class="navs">Audi RS4</li>
+                <li class="navs">Audi RS6</li>
                 <li class="navs">Audi RSQ 8</li>
             </ul>
         </nav>
     </header>
+
+    <!-- Contenido Principal -->
     <main>
+        <!-- Video -->
         <section class="video-container">
-            <video class="video-snow" src="video/AudiRS3.mp4" controls>
-                No se puede cargar
-            </video>
-        </section>
-        
-        <section class="contenedor1">
-            <div class="seccion">Seccion 1</div>
-            
-            <div class="seccion">Seccion 2</div>
-    
+            <div class="video-wrapper">
+                <video class="video-promo" src="video/AudiRS3.mp4" 
+                controls autoplay playsinline>
+                    No se puede cargar el video
+                </video>
+            </div>
         </section>
 
-        <section class="contenedor2">
-            <div><img class="box" src="imagenes/rs3.png" alt=""></div>
-            <div><img class="box" src="imagenes/rs3(1).png" alt=""></div>
-            <div><img class="box" src="imagenes/rs3(2).png" alt=""></div>
-            <div><img class="box" src="imagenes/rs3(3).png" alt=""></div>
-            <div><img class="box" src="imagenes/rs3(4).png" alt=""></div>
-            <div><img class="box" src="imagenes/rs3(5).png" alt=""></div>
-            <div><img class="box" src="imagenes/motor.png" alt=""></div>
-            <div><img class="box" src="imagenes/maletero.png" alt=""></div>
-            <div><img class="box" src="imagenes/asientos.png" alt=""></div>
+        <!-- Galería  -->
+        <section class="galeria">
+            <div class="contenedor-imagenes">
+                <div class="imagen">
+                    <img src="imagenes/rs3.png" alt="Película 1">
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/rs3(1).png" alt="Película 2">
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/rs3(2).png" alt="Película 3">
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/rs3(3).png" alt="Película 4">
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/rs3(4).png" alt="Película 5">
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/rs3(5).png" alt="Película 6">
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/motor.png" alt="Película 6">
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/maletero.png" alt="Película 6">
+                </div>
+                <div class="imagen">
+                    <img src="imagenes/asientos.png" alt="Película 6">
+                </div>
+            </div>
         </section>
-
     </main>
+
+    <!-- Pie de Página -->
     <footer>
-        <div class="footerItem">
-            <img src="imagenes/imagen.webp" alt="img1">
+        <div class="footer-item">
+            <img src="imagenes/icono.png" alt="Logo de Streamflix">
         </div>
-        <div class="footerItem">
-            <img src="imagenes/imagen2.jpg" alt="img2">
+        <div class="footer-item">
+            <p>&copy; 2025 Streamflix</p>
         </div>
-        <div class="footerItem">
-            <img src="imagenes/imagen3.jpg" alt="img3">
+        <div class="footer-item">
+            <p>Política de Privacidad | Términos de Servicio</p>
         </div>
     </footer>
 </body>
