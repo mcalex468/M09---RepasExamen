@@ -1,0 +1,72 @@
+.galeria {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+    background-color: antiquewhite; /* Fondo para la galería */
+    gap: 20px; /* Espacio entre elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    padding: 20px; /* Margen interno de la galería */
+}
+
+.imagen {
+    width: 300px; /* Ancho fijo para cada elemento */
+    height: 350px; /* Altura fija para garantizar uniformidad */
+    display: flex; /* Flexbox para alinear los hijos */
+    flex-direction: column; /* Alinea elementos en columna (imagen arriba, texto abajo) */
+    align-items: center; /* Centra los elementos horizontalmente */
+    background-color: #fff; /* Fondo blanco para cada recuadro */
+    border: 2px solid #ddd; /* Borde opcional */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta contenido desbordante */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    padding: 10px; /* Margen interno */
+}
+.imagen:hover {
+    box-shadow: 0 10px 15px rgb(185, 185, 179);
+    transform: scale(1.1);
+    transition: 1s;
+}
+.imagen img {
+    width: 100%; /* La imagen ocupa el ancho del contenedor */
+    height: 200px; /* Altura fija para que todas las imágenes tengan el mismo espacio */
+    object-fit: cover; /* Recorta o ajusta la imagen para llenar el espacio */
+    border-radius: 8px; /* Opcional: redondea los bordes de la imagen */
+    display: block;
+}
+
+.texto-img {
+    margin-top: auto; /* Separa el texto de la imagen */
+    text-align: center; 
+}
+
+.texto-img h3 {
+    font-size: 18px; /* Tamaño del título */
+    color: #333; /* Color del texto */
+    margin-bottom: 5px; /* Espaciado debajo del título */
+}
+
+.texto-img a {
+    text-decoration: none; /* Elimina subrayado */
+    font-size: 14px; /* Tamaño del texto */
+    color: #007bff; /* Color del enlace */
+    font-weight: bold; /* Negrita para el enlace */
+}
+
+footer {
+    background-color: rgb(185, 185, 179);
+    display: flex;
+    justify-content: space-between; /*Distribuye en el footer*/
+    color: black;
+    text-align: center; /*Centra el texto*/
+    align-items: center; /*Hace que se centren en altura*/
+    padding: 10px;
+}
+
+footer img {
+    height: auto; /*Auto para no perder la forma*/
+    width: 150px;
+}
+
+footer img:hover {
+    transform: scale(1.10) rotate(15deg); /*Amplia + Rota el Icono*/
+    transition: 1s;
+}
