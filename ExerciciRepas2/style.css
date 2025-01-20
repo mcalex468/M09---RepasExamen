@@ -1,3 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:antiquewhite;
+    color: white;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color:antiquewhite
+}
+
+/* Estilo del contenedor del logo */
+.logo {
+    display: flex;
+    align-items: center; /* Centra verticalmente si hay otros elementos */
+    justify-content: flex-start; /* Alinea el logo hacia la izquierda */
+   
+}
+/* Estilo de la imagen del logo */
+.logo img {
+    height: 90px; /* Altura ajustada según el diseño */
+    object-fit: contain; /* Mantiene las proporciones originales de la imagen */
+    transition: transform 1s;
+    padding: 5px 10px;
+}
+.logo img:hover {
+    transform: scale(1.4, 1);
+}
+/*Navegador*/
+.menu {
+    background-color:antiquewhite;
+    display: flex;
+    gap: 10px;
+    list-style: none; /*Quitar los puntos de la lista*/
+}
+.navs{
+    background-color:burlywood;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    transition: transform 1s, background-color 1s, color 0.5s;
+}
+.navs:hover{
+    transform: scale(1.1) rotateX(15deg) rotateY(10deg);
+    color: black;
+    background-color:darkkhaki
+}
+
+/*Video*/
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.video-promo {
+    position: absolute;
+    width: 100%; /* Se adapta al ancho del contenedor */
+    height: 100%; /* Se adapta al alto del contenedor */
+    object-fit: cover; /* Asegura que el video cubra el contenedor sin deformarse */
+    z-index: -1; /* Envía el video detrás de cualquier contenido adicional */
+}
+
+/* Contenido dentro del video */
+.contenido-video {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté sobre el video */
+    color: rgb(214, 245, 174); /* Color inicial */
+    font-family: 'Arial', sans-serif; /* Cambia el tipo de letra */
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    transition: transform 1s, color 1s, text-shadow 1s; /* Efecto de transición */
+}
+
+/* Hover en el contenido */
+.contenido-video:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    color: rgb(91, 189, 104); /* Cambia el color al hacer hover */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); /* Añade sombra al texto */
+}
+
+/*Galeria*/
+.galeria {
+    display: grid; /* Usamos Grid */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px;
+    background-color:antiquewhite ;
+}
 .galeria {
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
@@ -69,4 +170,18 @@ footer img {
 footer img:hover {
     transform: scale(1.10) rotate(15deg); /*Amplia + Rota el Icono*/
     transition: 1s;
+}
+
+
+/*RESPONSIVE*/
+@media(max-width: 1024px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr) ;
+    }
+}
+
+@media(max-width: 480px) {
+    .galeria {
+        grid-template-columns: repeat(1, 1fr) ;
+    }
 }
